@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+    volumes:
+      - ./target:/app/target
+    command: ["mvn", "spring-boot:run"]
+
+  frontend:
+    command: ["npm", "run", "dev"]
+    ports:
+      - "5173:5173"
+
+  pgadmin:
+    profiles: []

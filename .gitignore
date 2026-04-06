@@ -1,0 +1,48 @@
+# Compiled
+target/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+.mvn/
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.local
+.env.production
+application-local.yml
+application-dev.yml
+# application-prod.yml  ← REMOVA ESTA LINHA
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Temp
+*.tmp
+*.bak
+
+# Spring Boot
+spring-boot-devtools.properties
+
+# Secret files
+*.pem
+*.key
+*.crt
